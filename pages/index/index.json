@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wave": "../../component/wave/wave"
+  }
+}

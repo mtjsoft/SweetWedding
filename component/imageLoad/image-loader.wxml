@@ -1,0 +1,3 @@
+<!--component/imageLoad/image-loader.wxml-->
+<image wx:if='{{!finishLoadFlag}}' mode='{{modeImage}}' src='{{defaultImage}}' style='width:{{widthNumber}}rpx;height:{{heightNumber}}rpx;border-radius:{{radiusNumber}}rpx;' />
+<image class='{{finishLoadFlag ? "" : "before-load"}}' mode='{{modeImage}}' src='{{originalImage}}' bindload='finishLoad' binderror='errorLoad' style='width:{{widthNumber}}rpx;height:{{heightNumber}}rpx;border-radius:{{radiusNumber}}rpx;' />

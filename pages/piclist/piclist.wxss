@@ -1,0 +1,48 @@
+/* pages/piclist/piclist.wxss */
+
+.pageStyle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.imagestyle {
+  width: calc(100% - 40rpx);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.imageView {
+  width: 710rpx;
+  height: auto;
+  min-height: 375rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+
+.tipLookBigPic {
+  font-size: 14px;
+  width: calc(100% - 40rpx);
+  padding: 20rpx;
+  background-color: #32323250;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.imagecontent {
+  width: calc(100% - 40rpx);
+  color: #d4237a;
+  font-size: 14px;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  padding-bottom: 20rpx;
+}

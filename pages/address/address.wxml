@@ -1,0 +1,5 @@
+<!--pages/address/address.wxml-->
+<loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
+<view wx:else class='pageStyle'>
+  <map class='mapStyle' id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="18" show-location bindmarkertap="markertap" subkey="46FBZ-OZ33J-YQTFQ-KON2G-MXDJ6-RLBN6"></map>
+</view>

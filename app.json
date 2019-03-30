@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/like/like",
+    "pages/pics/pics",
+    "pages/invite/invite",
+    "pages/address/address",
+    "pages/piclist/piclist"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#d4237a",
+    "navigationBarTitleText": "甜蜜婚礼",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "loading": "component/loadView/index"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "color": "#8a8a8a",
+    "selectedColor": "#d4237a",
+    "list": [
+      {
+        "pagePath": "pages/pics/pics",
+        "text": "最美婚纱",
+        "iconPath": "static/images/index_pic.png",
+        "selectedIconPath": "static/images/index_pic_c.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "iconPath": "static/images/index_like.png",
+        "selectedIconPath": "static/images/index_like_c.png",
+        "text": "留言祝福"
+      },
+      {
+        "pagePath": "pages/invite/invite",
+        "iconPath": "static/images/index_invite.png",
+        "selectedIconPath": "static/images/index_invite_c.png",
+        "text": "电子请柬"
+      },
+      {
+        "pagePath": "pages/address/address",
+        "iconPath": "static/images/index_address.png",
+        "selectedIconPath": "static/images/index_address_c.png",
+        "text": "导航前往"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,36 @@
+page{
+  background-color: #fff;
+}
+.title {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  position: fixed;
+  top: 10%;
+}
+
+.button {
+  font-size: 16px;
+  margin-left: 10%;
+  width: 80%;
+  background-color: #d4237a;
+  color: #fff;
+  position: fixed;
+  bottom: 100rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  border-radius: 10rpx;
+}
+
+.number {
+  color: #d4237a;
+  position: fixed;
+  bottom: 10%;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}

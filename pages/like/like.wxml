@@ -1,0 +1,41 @@
+<!--pages/like/like.wxml-->
+<loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
+<view wx:else class='pageStyle'>
+  <view class='tipView'>
+    <i-notice-bar wx:if="{{pageCount > 0}}" icon="systemprompt" loop="true">
+      已收到{{pageCount}}条亲友的祝福，赶快送上您真挚的祝福吧！
+    </i-notice-bar>
+    <i-notice-bar wx:if="{{pageCount == 0}}" icon="systemprompt" loop="true">
+      还未收到任何祝福，赶快送上您真挚的祝福吧！
+    </i-notice-bar>
+  </view>
+
+  <block wx:for="{{pagerList}}">
+    <!-- <view class='likeliststyle' style='margin-top: {{index==0?80:0}}rpx;'>
+      <view class='listLeftView'>
+        <image-loader modeImage='scaleToFill' originalImage='{{item.headimage}}' radiusNumber="10"></image-loader>
+      </view>
+      <view class='listRightView'>
+        <view class='name'>{{item.name}}</view>
+        <view class='content'>{{item.msgcontent}}</view>
+        <view class='time'>{{item.msgtime}}</view>
+      </view>
+    </view> -->
+
+    <view class='cradView' style='margin-top: {{index>0?0:90}}rpx;'>
+      <view class='userView'>
+        <image class='headImage' src='{{item.headimage}}'></image>
+        <view style='margin-left: 20rpx;'>{{item.name}}</view>
+        <view class='timeText'>{{item.msgtime}}</view>
+      </view>
+      <view class='cardText'>{{item.msgcontent}}</view>
+    </view>
+  </block>
+  <i-load-more wx:if="{{isloadmore}}" loading="{{isloadmore}}" />
+  <view style='margin-bottom: 120rpx;'></view>
+
+  <view class="send_msg">
+    <input focus="{{isInput}}" placeholder="在这里送上您真挚的祝福吧" value='{{inputValue}}' class="send_ipt" bindinput="bindKeyInput" maxlength='-1' />
+    <button class="send_btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">送祝福</button>
+  </view>
+</view>

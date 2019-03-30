@@ -1,0 +1,13 @@
+<!--pages/piclist/piclist.wxml-->
+<loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
+<view wx:else class='pageStyle'>
+  <block wx:for="{{pagerList}}">
+    <view class='imagestyle' bindtap='lookbigPic' id='{{index}}' >
+      <image class='imageView' style='margin-top: {{index>0?0:20}}rpx;' src='{{item.imageurl}}' mode='widthFix'></image>
+      <view class='tipLookBigPic'>点击看大图</view>
+    </view>
+    <view class='imagecontent'>{{item.imagecontent}}</view>
+  </block>
+
+  <i-load-more wx:if="{{isloadmore}}" loading="{{isloadmore}}" />
+</view>

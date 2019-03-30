@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-load-more": "../../dist/load-more/index",
+    "image-loader": "../../component/imageLoad/image-loader"
+  }
+}

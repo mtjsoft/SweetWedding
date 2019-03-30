@@ -1,0 +1,10 @@
+<view class="view-no-use" style='height:{{height}}px'>
+  <view class='view_loading' wx:if="{{loadingState==0}}">
+    <text class="icon-open-new icon"></text>
+    <text>加载中</text>
+  </view>
+  <image class="img-no-data" wx:if="{{loadingState>1}}" src="{{loadIngStateImg[loadingState]}}"></image>
+  <text class="text_no_data" wx:if="{{loadingState>1}}">{{loadIngStateText[loadingState]}}</text>
+  <text class="text_no_data_dsc" wx:if="{{loadingState>1}}">{{loadIngStateTextDsc[loadingState]}}</text>
+  <text class='view_no_data_reload' wx:if="{{optionDec[loadingState]}}" catchtap='reLoad'>{{optionDec[loadingState]}}</text>
+</view>
